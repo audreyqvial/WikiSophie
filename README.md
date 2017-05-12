@@ -13,11 +13,6 @@ Des applications en ligne de ce genre existent déjà:
   
 Par exemple, avec notre application, on peut relier le mot *ketchup* à *philosophie* avec 8 liens intermédiaires.  
   
-Pour la section 2 du code, les vérifications ont été faites par des `print` de résultats dans le `__main__`:  
-```pp = pprint.PrettyPrinter(indent=4)
-    stuff_A3nm = getJSON("Utilisateur:A3nm/INF344")
-    pp.pprint(stuff_A3nm)```
-  
 Pour la suite du TP,  notamment par rapport à la section 4, j’ai choisi de diviser la fonction `getPage` en deux fonctions, 
 ce qui était, de mon point de vue, plus simple: une fonction `parsing_link` qui va utiliser **Beautifulsoup** pour parser 
 la page wiki et une fonction `getPage` qui va utiliser le cache et les résultats de `parsing_link`.  
