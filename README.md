@@ -23,4 +23,5 @@ vers des pages inexistantes en remarquant que la classe associée dans le code H
 externes avec `{"class" : "external autonumber"}`. Une regex permet ensuite de sélectionner les URLs qui contiennent `/wiki/`. 
 On ne garde de cette liste que les liens uniques grâce à la librairie collections.  
 Au final seulement les 10 premiers liens sont renvoyés.  
-  ![Espace_nom] (https://fr.wikipedia.org/wiki/Aide:Espace_de_noms#/media/File:StructurationPagesWikipediaV0.5.jpg)
+  
+![Espace_nom](http://fr.wikipedia.org/wiki/Aide:Espace_de_noms#/media/File:StructurationPagesWikipediaV0.5.jpg)
