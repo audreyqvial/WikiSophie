@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+{% block body %}
+  <div id="Title_score">
+    <h1 align="center"> <a class="no_dec" href="/"> WikiSophie: {{session.article}} </a> </h1> <br>
+    <p align="center"> <b> Your actual score is {{truescore}} </b></p>
+  </div>
+    <div class="form_wiki">
+      <form  class="form_url" action="/move" method="post">
+	      <fieldset>
+          {% for item in session.url %}
+            {% if loop.first %}
+              <div class="radio_button">
+              <input type="radio" name="link" id='N{{loop.first}}' value={{item}} checked = "checked"> 
+              <label for=N{{loop.first}}> <span class="radio">{{item}}</span></label><br><br>
+              </div>  
+            {% else %}
+              <div class="radio_button">
+              <input type="radio" name="link" id='N{{loop.first}}' value={{item}}> 
+              <label for=N{{loop.first}}><span class="radio">  {{item}} </span></label><br><br> 
+              </div> 
+            {% endif %}
+          {% endfor %}
+          <input type="hidden" name="score" value={{truescore}}>
+          <div class="submitbtn">
+             <input type="submit" value="Submit">
+             <input type="hidden" name="_submit_check" value="1">
+          </div>
+        </fieldset>
+      </form>
+    </div>
+{% endblock %}
+

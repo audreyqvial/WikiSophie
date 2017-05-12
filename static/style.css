@@ -1,0 +1,87 @@
+/* Le CSS va ici */
+body {
+    background-color: DarkSlateGray ;
+}
+
+h1 { 
+    margin: : auto;
+    color: white;
+}
+
+p {
+    text-align: middle;
+    margin: : auto;
+    color: white;
+}
+
+.no_dec {
+    text-decoration:none;
+    color:white;
+}
+
+div.form_wiki {
+    display: block;
+    text-align: center;
+}
+
+.form_url{
+    text-align: left;
+    display: inline-block;
+    background-color: white;
+    width: 500px;
+    border-color: black;
+    border-width : 5px;
+    border-radius: 5px;
+    border-style: outset;
+    margin: auto;
+}
+
+.radio_button {
+   transition-duration: 0.4s;
+   padding: 5px;
+}
+
+.radio_button:hover {
+    background-color: LightSeaGreen;
+    color: white;
+}
+
+.submitbtn{
+  width: 80px;
+  margin:0 auto;
+  float: right; 
+}
+
+/*flash*/
+.alert-error {
+    width: 600px;
+    margin: 0 auto;
+    float:middle;
+    background-color: Salmon;
+    border-color: Crimson;
+    color: Magenta;
+    text-align: left;
+    padding: 2px;
+}
+
+.alert-alert {
+    width: 600px;
+    margin: 0 auto;
+    float:middle;
+    background-color: Salmon;
+    border-color: Crimson;
+    color: Magenta;
+    text-align: left;
+    padding: 2px;
+ }
+
+.alert-success {
+    width: 600px;
+    margin: 0 auto;
+    float:middle;
+    background-color: PaleGreen;
+    border-color: MediumSeaGreen;
+    color: Teal;
+    text-align: left;
+    padding: 2px;
+ }
